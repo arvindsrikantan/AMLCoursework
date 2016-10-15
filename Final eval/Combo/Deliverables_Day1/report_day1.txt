@@ -1,0 +1,61 @@
+AML SEE (Day 1)
+---------------
+
+Part 1:-
+------
+
+Phase 1: Image normalization :-
+----------------------------
+--> Normalization of images to a standard size {(16x8), (16x16) and (32x32)} was performed using "ImageOps.fit()" function.
+--> Alternatively, the resizing of images was also performed using the "resize" function in opencv. 
+
+Phase 2: Building Neural Network :-
+--------------------------------
+Test case 1 :-
+-----------
+--> A neural network was constructed using the "neurolab" library with the following specifications :-
+1) Number of input nodes :- 384
+2) Number of hidden layers :- 1
+3) Number of hidde nodes :- 8
+4) Number of output nodes :- 4
+
+--> Observations :- An accuracy of 80.21% was obtained when training was performed for a neural network with the above mentioned specifications and the input being (16x8) normalised images.
+
+Test case 2 :-
+-----------
+--> A neural network was constructed using the "neurolab" library with the following specifications :-
+1) Number of input nodes :- 384
+2) Number of hidden layers :- 1
+3) Number of hidde nodes :- 12
+4) Number of output nodes :- 4
+
+--> Observations :- An accuracy of 82.37% was obtained when training was performed for a neural network with the above mentioned specifications and the input being (16x8) normalised images.
+
+Test case 3 :-
+-----------
+--> A neural network was constructed using the "neurolab" library with the following specifications :-
+1) Number of input nodes :- 768
+2) Number of hidden layers :- 1
+3) Number of hidde nodes :- 4
+4) Number of output nodes :- 4
+
+--> Observations :- An accuracy of 65.66% was obtained when training was performed for a neural network with the above mentioned specifications and the input being (16x16) normalised images.
+
+Phase 3: Visualization and Fine tuning :-
+--------------------------------------
+
+
+Part 2: Building a deep neural network :-
+--------------------------------------
+
+A stacked autoencoder DNN with the following architectures were built :-
+
+Case 1 :- A DNN with 384 input nodes, 1 hidden layer with 8 nodes and output layer with 4 nodes
+--------
+An accuracy of 65% was observed.
+
+Case 2 :- A DNN with 384 input nodes, 1 hidden layer with 16 nodes and output layer with 4 nodes
+--------
+An accuracy of 74.46% was observed.
+
+

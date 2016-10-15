@@ -1,0 +1,16 @@
+Identification of number of participants :-
+Part 1 :-
+--> Dataset generation module was used to prepare the dataset.
+--> GMMHMM with 3 hidden states and 1 gaussian mixture. Efficiency :- 90%
+
+Part 2 :-
+--> Dataset generation module was used to prepare the dataset.
+--> GMMHMM with 3 hidden states and 1 gaussian mixture. Efficiency :- 100% for Arvind_9 file, 93.5% for Arnab, Ravish (83.8%)  
+(yet to test for other files)
+
+Part 3 :-
+--> Dataset generation module was used to prepare the dataset.
+--> The division of testing and training data was done by random selection, hence division of testing and training data was not optimal. 
+Thus, the efiiciency was comparitively low. (30%)
+
+
