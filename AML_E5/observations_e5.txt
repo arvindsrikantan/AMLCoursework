@@ -1,0 +1,43 @@
+=========================================================================================================================================
+
+														AML EVALUATION 5 OBSERVATIONS
+By : 
+
+Arvind Srikantan (1PI12CS036)
+Ashwin N (1PI12CS037)
+Akshay Varun (1PI12EC006)
+Naman Nandan (1PI12EC061)
+
+=========================================================================================================================================
+
+A hybrid system was built with the following design - 
+
+1. A HMM layer which takes 128 pixels as input and emits an output as Vowel or Consonant.
+2. Output bit from the HMM is concatenated with the original 128 bits (pixels from the image) and given as input to the Neural Network.
+3. Output layer of the Neural Network is a SoftMax Classifier.
+
+The hybrid system is tested for accuracy.
+
+Neural network implementation used - Neurolab
+HMM implementation used - myhmm_log.py by Prof. Anantharaman 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Machine having 16 hidden units with one hidden layer : 
+
+*	Observed Accuracy of the system - 76%
+*	Reasons for the high accuracy -  The effective accuracy of the HMM plays an important role in this case.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+List of files :-
+
+*	ocr.py - data preprocessing and visualization of bit-map image
+*	HMM-NeuralNetworkHybrid.py - The hybrid neural network built using neurolab.
+*	myhmm_log.py - HMM implementation(Given by evaluator)
+*	vowel.data - Contains filtered vowel input data
+*	consonants.data - Contains filtered consonant input data
+*	hmmout.txt - Contains output data from the hmm(1-for vowel, 0-for consonant) for test data
+*	hmmouttrain.txt - Contains output data from the hmm(1-for vowel, 0-for consonant) for training data
